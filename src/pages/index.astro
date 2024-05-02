@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Notifications from "../components/vue/Notifications.vue";
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="h-screen bg-slate-600 flex justify-center items-center">
+		<Notifications client:load />
+	</div>
+</Layout>
